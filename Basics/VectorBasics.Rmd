@@ -49,3 +49,59 @@ print(names(attributeVector2))
 
 ```
 
+```{r}
+sortvector1 <- c("darius", "jayce", "ahri", "quinn", "pyke", "graves")
+print(sort(sortvector1))
+#Better use numbers lol. Should return the position when sorted
+print(order(sortvector1))
+
+#Index starts from 1
+print(sortvector1[1])
+#To pick using name a["name"]
+print(sortvector1[2:5])
+
+#Except 2nd element
+print(sortvector1[-2])
+#2nd and 4th element
+print(sortvector1[c(2,4)])
+#Omits 4th and 5th
+print(sortvector1[-(4:5)])
+
+```
+```{r}
+sortVector2 <- c(1,4,3,2,5,7,6,8,1)
+print(order(sortVector2))
+
+#All 1s
+print(sortVector2[sortVector2 == 1])
+
+#Elements greater than 4
+print(sortVector2[sortVector2 > 4])
+
+#Returns if elements are there in list
+print(sortVector2[sortVector2 %in% c(3,7,5)])
+
+#Sorting
+print(sort(sortVector2,decreasing = TRUE))
+
+#Maximum element
+print(max(sortVector2))
+
+#Name and position of greatest element
+print(which.max(sortVector2))
+
+rank(sortVector2)
+
+```
+```{r}
+#Shorter vector is repeated to length of longer vector
+vector1 <- c(1,1)
+vector2 <- c(2,2,2,2)
+
+print(vector1 + vector2)
+print(vector2 - vector1)
+print(vector1 * vector2)
+print(vector1 == vector2)
+
+```
+
