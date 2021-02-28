@@ -1,0 +1,106 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+
+```{r}
+plot(cars)
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+```{r}
+print("Hello world")
+
+#This file contains the basics like assignment operators, types and operators
+```
+```{r}
+#Default variable type for numeric is double
+
+#Assignment
+testnum <- 20
+print (testnum)
+testfruit <- "apple"
+print(testfruit)
+
+#Also assignment - Not recommended
+testnum2 = 10
+print(testnum2)
+```
+```{r}
+
+#Operators
+
+testnum <- 20
+testnum2 <- 7
+print(testnum + testnum2)
+print(testnum-testnum2)
+print(testnum*testnum2)
+print(testnum/testnum2)
+
+#Modulus
+print(testnum%%testnum2)
+#Integer division
+print(testnum%/%testnum2)
+```
+```{r}
+print(testnum>testnum2)
+
+b1 <-TRUE
+b2 <-FALSE
+
+#Non vector operator
+print(b1 & b2)
+#Can be used for vectors too
+print(b1 && b2)
+
+v1 <- c(1,2,3,4)
+v2 <- c(1,3,4,5)
+
+#(v1 = v2)  is error because non vector logical operator
+
+#Applies the operator to parallel elements
+print(v1 == v2)
+
+#Shorter vector repeated
+v3 <- c(1,1)
+v4 <- c(1,2,1,2,1,2)
+print(v3 == v4)
+```
+```{r}
+testnum3 <- 13
+testnum4 <- 7
+testnum5 <-3
+
+print(typeof(testnum3))
+print(abs(testnum4-testnum3))
+print(factorial(3))
+is.numeric(testnum3)
+
+```
+
+```{r}
+#To override storing a numeric data as double, add L
+
+testnum6 <-100L
+print(typeof(testnum6))
+
+#Boolean can also be assigned using 1 letter. but both cases have to be in caps.
+b3 <- T
+typeof(b3)
+
+```
+```{r}
+#Scan takes input until enter pressed twice
+var1 <- scan()
+print(var1)
+```
+
+
