@@ -1,0 +1,22 @@
+```{r}
+print("Factors")
+
+#Factors are mostly used for categorizing
+```
+
+```{r}
+champs <- c("ahri", "xayah", "sona", "mid", "soraka")
+lane <- c("mid", "adc", "supp", "mid", "supp")
+
+lane_category <- factor(lane)
+print(lane_category)
+
+#structure
+print(str(lane_category))
+
+
+#changing the default order and assign order of hierarchy
+lane_category <- factor(lane, levels= c("supp", "adc", "mid"), ordered = TRUE)
+print(str(lane_category))
+```
+
