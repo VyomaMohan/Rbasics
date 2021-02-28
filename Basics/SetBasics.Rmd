@@ -1,0 +1,21 @@
+```{r}
+print("Sets")
+
+#Sets and operations on them
+```
+
+```{r}
+botlane <- c("xayah", "caitlyn", "seraphine", "jhin", "ashe", "varus", "yuumi", "sona", "soraka", "bard")
+adcChamps <- c("xayah", "caitlyn", "jhin", "ashe", "varus")
+
+print(union(botlane,adcChamps))
+
+print(intersect(botlane,adcChamps))
+
+print(setdiff(adcChamps,botlane))
+print(setdiff(botlane,adcChamps))
+
+#True if element present in both sets
+print(adcChamps %in% botlane)
+```
+
