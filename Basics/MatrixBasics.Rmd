@@ -1,0 +1,57 @@
+```{r}
+print("Matrices")
+
+#Matrix basics
+```
+
+```{r}
+vector1 <- c(1, 3, 5, 7, 9)
+vector2 <- c(2, 4, 6, 8, 10)
+
+print(cbind(vector1, vector2))
+print(rbind(vector1, vector2))
+```
+```{r}
+matrix1 <- rbind(vector1, vector2)
+print(matrix1)
+
+#Other way to create
+matrix2 <- matrix(1:10,nrow=2,byrow =  TRUE)
+print(matrix2)
+
+print(matrix1[1,1])
+print(matrix1[1,])
+print(matrix1[,1])
+```
+```{r}
+#Performs the operation on each element
+print(matrix1 + matrix2)
+
+print(5*matrix1 - matrix2 )
+
+#Not real matrix multiplication. Performs element wise
+print(matrix1 * matrix2)
+```
+```{r}
+matrix1 <-rbind(c(1,1),c(1,1))
+matrix2 <-rbind(c(1,1),c(1,1))
+
+#Actual matrix multiplication
+print(matrix1 %*% matrix2)
+```
+
+```{r}
+matrix1 <-rbind(c(1,2),c(1,2))
+
+print(rowSums(matrix1))
+print(colSums(matrix1))
+
+#Transpose
+print(t(matrix1))
+```
+```{r}
+#Creating an identity matrix
+#ip: no of rows/cols
+print(diag(4))
+```
+
