@@ -1,0 +1,51 @@
+```{r}
+print("Vectors")
+
+#Vector and vector operations basics
+```
+
+```{r}
+#Creating vectors
+
+createvector1 <- c("ahri", "anivia", "azir", "bard")
+print(createvector1)
+
+createvector2 <- assign("botlane",c("xayah", "rakan", "caitlyn"))
+print(createvector2)
+names(createvector2) #NULL
+
+#Colon assigns consecutive numbers
+createvector3 <- 1:10
+print(createvector3)
+
+#Assigns an arithmetic progression
+#seq(lower limit, upper limit, increment)
+createvector4 <- seq(1,5,1.5)
+print(createvector4)
+
+#Replicate elements
+#rep(start:end, times)
+createvector5 <- rep(2:5,times=3)
+print(createvector5)
+
+#Get is input
+createvector6 <- scan()
+```
+```{r}
+attributeVector <- c("riven", "ahri", "xayah", "rakan", "warwick", 2, 5)
+
+print(length(attributeVector))
+#If mixed type, implicit conversion occurs
+print(typeof(attributeVector))
+print(is.vector(attributeVector))
+
+nameVector <- c("top", "mid", "bot", "supp", "jngl", "num1", "num2")
+names(attributeVector) <- nameVector
+print(names(attributeVector))
+print(attributeVector)
+
+attributeVector2 <- c("top"="quinn")
+print(names(attributeVector2))
+
+```
+
